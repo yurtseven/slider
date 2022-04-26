@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        tools:ignore="MissingConstraints">
+
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+            android:id="@+id/news1"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <LinearLayout
+                android:id="@+id/news_image1"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:background="@drawable/image_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blacktopac"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/news_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First News"
+                        android:textColor="@color/black"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/news2"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <LinearLayout
+                android:id="@+id/news_image2"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:background="@drawable/image_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blacktopac"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/news_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Second News"
+                        android:textColor="@color/black"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/news3"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <LinearLayout
+                android:id="@+id/news_image3"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:background="@drawable/image_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blacktopac"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/news_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Third News"
+                        android:textColor="@color/black"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </ViewFlipper>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
